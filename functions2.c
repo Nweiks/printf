@@ -48,6 +48,7 @@ int print_pointer(va_list types, char buffer[],
 	/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
 	return (write_pointer(buffer, ind, length,
 		width, flags, padd, extra_c, padd_start));
+}
 /**
  * print_non_printable - Prints ascii codes in hexa of non printable chars
  * @types: Lista of arguments
@@ -58,6 +59,7 @@ int print_pointer(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of chars printed
  */
+
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
