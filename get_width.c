@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * get_width - calculate the widthfor printing
- * @format: format string in which to print the argument
- * @i: list of argument to be prined
+ * @format: format string in which to print the arguments
+ * @i: list of arguments to be printed
  * @list: list of argument
  * Return: width
  */
