@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * get_width - calculate the widthfor printing
- * @format: format string in which to print the argument
- * @i: list of argument to be prined
+ * @format: format string in which to print the arguments
+ * @i: list of arguments to be printed
  * @list: list of argument
  * Return: width
  */
-int get_width(const char *format,va_list list)
+int get_width(const char *format, int *i, va_list list)
 {
 	int curr_i;
 	int width = 0;
@@ -21,7 +21,7 @@ int get_width(const char *format,va_list list)
 		else if (format[curr_i] == '*')
 		{
 			curr_i++;
-			width va_arg(list, int);
+			width = va_arg(list, int);
 			break;
 		}
 		else
